@@ -2,7 +2,7 @@ class SongsController < ApplicationController
   before_action :find_song, only: %i[edit update show destroy]
 
   def index
-    @song = Song.all
+    @songs = Song.all
   end
 
   def show
